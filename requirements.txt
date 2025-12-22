@@ -11,5 +11,6 @@ tk-tools
 tkinterweb
 ttkbootstrap
 PIL
+Pillow
 PyQt5
 pyqt5-tools
