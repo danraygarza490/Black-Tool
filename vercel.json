@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Core/index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Core/**/*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Scr/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/Core/index.html"
+    },
+    {
+      "src": "/index.html",
+      "dest": "/Core/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
